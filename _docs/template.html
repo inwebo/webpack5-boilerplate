@@ -6,6 +6,21 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="description" content="<%= description %>"/>
+    <link rel="canonical" href="index.html" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta property="og:description" content="<%= description %>" />
+    <meta property="og:url" content="<%= github.docs %>" />
+    <meta property="og:site_name" content="<%= name %>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta name="twitter:description" content="<%= description %>" />
+    <meta name="twitter:site" content="@inwebo/sprite.js" />
+    <meta name="twitter:creator" content="@inwebo/sprite.js" />
   </head>
 
   <body>
