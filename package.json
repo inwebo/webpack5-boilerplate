@@ -4,7 +4,7 @@
   "description": "Webpack 5 stack",
   "main": "src/index.js",
   "author": "Inwebo veritas",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "homepage": "https://github.com/inwebo/webpack5-boilerplate",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
