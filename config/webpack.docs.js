@@ -7,6 +7,8 @@ const common = require('./webpack.common')
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
+const package_conf = require('../package.json')
+
 module.exports = merge(common, {
   mode: 'production',
   devtool: false,
@@ -45,7 +47,7 @@ module.exports = merge(common, {
     // Generates an HTML file from a template
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
-      title: 'webpack Boilerplate',
+      title: package_conf.name,
       favicon: paths.docs_in + '/images/favicon.png',
       template: paths.docs_in + '/template.html', // template file
       filename: 'index.html', // output file
