@@ -1,10 +1,11 @@
 {
-  "name": "webpack-boilerplate",
-  "version": "3.0.1",
-  "description": "Sensible webpack 5 boilerplate using Babel and PostCSS.",
+  "name": "webpack5-boilerplate",
+  "version": "0.0.1",
+  "description": "Webpack 5 stack",
   "main": "index.js",
   "author": "Inwebo veritas",
   "license": "MIT",
+  "homepage": "https://github.com/inwebo/webpack5-boilerplate",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
