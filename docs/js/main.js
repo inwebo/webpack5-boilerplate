@@ -1,0 +1,1 @@
+(self.webpackChunkwebpack_boilerplate=self.webpackChunkwebpack_boilerplate||[]).push([[179],{880:(e,s,l)=>{"use strict";l(115),console.log("docs/index.js")},115:()=>{console.log("docs/js/example.js")}},e=>{e(e.s=880)}]);
