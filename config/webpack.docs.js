@@ -59,7 +59,8 @@ module.exports = merge(common, {
         description: package_conf.description,
         name: repository.github.name,
         docs: repository.github.docs,
-        url: package_conf.homepage
+        url: package_conf.homepage,
+        author: package_conf.author
       }
     }),
 
