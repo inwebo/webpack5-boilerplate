@@ -1,5 +1,7 @@
 const { merge } = require('webpack-merge')
 
+const path = require('path')
+
 const common = require('./webpack.common')
 
 module.exports = merge(common, {
@@ -11,11 +13,16 @@ module.exports = merge(common, {
 
   // Spin up a server for quick development
   devServer: {
+    http2: true,
+    https: true,
     historyApiFallback: true,
     open: true,
     compress: true,
     hot: true,
     port: 8080,
+    static: {
+      directory: path.join(__dirname, '../docs'),
+    },
   },
 
   module: {
