@@ -7,7 +7,8 @@ const common = require('./webpack.common')
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-const package_conf = require('../package.json')
+const package_conf = require('../package.json');
+const repository = require('../config/repository.json');
 
 const p = `${paths.docs_in}/index`
 
@@ -55,7 +56,10 @@ module.exports = merge(common, {
       template: paths.docs_in + '/template.html', // template file
       filename: 'index.html', // output file,
       templateParameters: {
-        description: package_conf.description
+        description: package_conf.description,
+        name: repository.github.name,
+        docs: repository.github.docs,
+        url: package_conf.homepage
       }
     }),
 

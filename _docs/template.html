@@ -14,20 +14,20 @@
     <h1 class="title"><%= htmlWebpackPlugin.options.title %></h1>
     <h2 class="subtitle"><%= description %></h2>
     <p class="disclaimer">
-      <img title="Discover Render.js activity on github by Inwebo veritas" alt="Render.js activity by Inwebo veritas" src="https://img.shields.io/github/commit-activity/w/inwebo/Render.js">
-      <img title="Discover Render.js repository on github by Inwebo veritas" alt="Render.js repository size by Inwebo veritas" src="https://img.shields.io/github/repo-size/inwebo/Render.js?logo=Render.js">
-      <img title="Render.js version on github" alt="Render.js version size by Inwebo veritas"
-           src="https://img.shields.io/github/package-json/v/inwebo/Render.js?logo=Render.js">
-      <img title="Render.js version last commit by Inwebo veritas on github" alt="Render.js last activity by Inwebo veritas" src="https://img.shields.io/github/last-commit/inwebo/Render.js">
+      <img title="Discover <%= name %> activity on github by Inwebo veritas" alt="<%= name %> activity by Inwebo veritas" src="https://img.shields.io/github/commit-activity/w/inwebo/<%= name %>">
+      <img title="Discover <%= name %> repository on github by Inwebo veritas" alt="<%= name %> repository size by Inwebo veritas" src="https://img.shields.io/github/repo-size/inwebo/<%= name %>?logo=<%= name %>">
+      <img title="<%= name %> version on github" alt="<%= name %> version size by Inwebo veritas"
+           src="https://img.shields.io/github/package-json/v/inwebo/<%= name %>?logo=<%= name %>">
+      <img title="<%= name %> version last commit by Inwebo veritas on github" alt="<%= name %> last activity by Inwebo veritas" src="https://img.shields.io/github/last-commit/inwebo/<%= name %>">
     </p>
-    <a class="scroll-down" href="#content" title="Discover Render.js on github by Inwebo veritas"></a>
+    <a class="scroll-down" href="#content" title="Discover <%= name %> on github by Inwebo veritas"></a>
   </header>
 
   <main id="content">
     <section>
       <ul class="breadcrumbs">
         <li><a title="Inwebo veritas" href="https://github.com/inwebo">Inwebo</a></li>
-        <li><a title="Inwebo veritas Sprites.js" href="https://github.com/inwebo/Render.js">Render.js</a></li>
+        <li><a title="Inwebo veritas <%= name %>" href="<%= url %>"><%= name %></a></li>
         <li>Documentation</li>
       </ul>
     </section>
@@ -35,22 +35,22 @@
       <div class="row">
         <div class="col col-lg-3">
           <div class="sidebar sidebar-left">
-            <h3 class="sidebar-category"><a title="How to use Render.js" href="#quick-start">Quick start</a></h3>
+            <h3 class="sidebar-category"><a title="How to use <%= name %>" href="#quick-start">Quick start</a></h3>
             <ul class="sidebar-links">
-              <li><a title="Render.js features" href="#features">Features</a></li>
-              <li><a title="Render.js installation" href="#installation">Install</a></li>
+              <li><a title="<%= name %> features" href="#features">Features</a></li>
+              <li><a title="<%= name %> installation" href="#installation">Install</a></li>
             </ul>
-            <h3 class="sidebar-category"><a title="Render.js's dependencies class explore them" href="#class">Class</a></h3>
+            <h3 class="sidebar-category"><a title="<%= name %>'s dependencies class explore them" href="#class">Class</a></h3>
             <ul class="sidebar-links">
-              <li><a title="Render.js's class Render.js" href="#render-abstract-js">RendererAbstract.js</a></li>
-              <li><a title="Render.js's class Rgb.js" href="#render-2d-js">Renderer2D.js</a></li>
-              <li><a title="Render.js's class Rgb.js" href="#render-offscreen-js">RendererOffScreen.js</a></li>
+              <li><a title="<%= name %>'s class Render.js" href="#render-abstract-js">RendererAbstract.js</a></li>
+              <li><a title="<%= name %>'s class Rgb.js" href="#render-2d-js">Renderer2D.js</a></li>
+              <li><a title="<%= name %>'s class RendererOffScreen.js" href="#render-offscreen-js">RendererOffScreen.js</a></li>
             </ul>
-            <h3 class="sidebar-category"><a title="Render.js's use cases" href="#demos">Demos</a></h3>
+            <h3 class="sidebar-category"><a title="<%= name %>'s use cases" href="#demos">Demos</a></h3>
             <ul class="sidebar-links">
-              <li><a title="Bootstrap Render.js project" href="#bootstrap-sprite-js">Bootstrap</a></li>
+              <li><a title="Bootstrap <%= name %> project" href="#bootstrap-sprite-js">Bootstrap</a></li>
             </ul>
-            <h3 class="sidebar-category"><a title="Render.js's use cases" href="#help">Help</a></h3>
+            <h3 class="sidebar-category"><a title="<%= name %>'s use cases" href="#help">Help</a></h3>
             <ul class="sidebar-links">
               <li><a title="Render.js bug report" href="https://github.com/inwebo/Render.js/issues" target="_blank">Bug report</a></li>
             </ul>
@@ -127,8 +127,8 @@
         <div class="col col-lg-5">
           <div class="footer-text">
               <h5 class="h3">Inwebo veritas</h5>
-            <p dir="auto"><a href="https://www.julien-hannotin.fr" title="Julien Hannotin" rel="nofollow">I am</a> a <a href="https://www.linkedin.com/in/julien-hannotin/" title="Linkedin profile" rel="nofollow">web developer</a>, I create <a href="https://packagist.org/profile/" rel="nofollow">PHP application</a> or <a href="https://www.npmjs.com/~inwebo" rel="nofollow">modern Javascript</a>. I sometimes
-              <a href="https://www.deviantart.com/inwebo" rel="nofollow">take some photos too</a>.</p>
+            <p dir="auto"><a href="https://www.julien-hannotin.fr" title="Julien Hannotin">I am</a> a <a href="https://www.linkedin.com/in/julien-hannotin/" title="Linkedin profile">web developer</a>, I create <a href="https://packagist.org/packages/inwebo/">PHP application</a> or <a href="https://www.npmjs.com/~inwebo">modern Javascript</a>. I sometimes
+              <a href="https://www.deviantart.com/inwebo">take some photos too</a>.</p>
           </div>
         </div>
         <div class="col col-sm-6 col-lg-3 col-lg-offset-1">
