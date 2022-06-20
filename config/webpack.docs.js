@@ -53,7 +53,10 @@ module.exports = merge(common, {
       title: package_conf.name,
       favicon: paths.docs_in + '/images/favicon.png',
       template: paths.docs_in + '/template.html', // template file
-      filename: 'index.html', // output file
+      filename: 'index.html', // output file,
+      templateParameters: {
+        description: package_conf.description
+      }
     }),
 
 
