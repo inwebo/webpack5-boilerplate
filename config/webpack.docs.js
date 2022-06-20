@@ -4,6 +4,8 @@ const { merge } = require('webpack-merge')
 
 const paths = require('./paths')
 const common = require('./webpack.common')
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = merge(common, {
   mode: 'production',
@@ -38,6 +40,30 @@ module.exports = merge(common, {
     new MiniCssExtractPlugin({
       filename: 'styles/[name].[contenthash].css',
       chunkFilename: '[id].css',
+    }),
+
+    // Generates an HTML file from a template
+    // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
+    new HtmlWebpackPlugin({
+      title: 'webpack Boilerplate',
+      favicon: paths.docs_in + '/images/favicon.png',
+      template: paths.docs_in + '/template.html', // template file
+      filename: 'index.html', // output file
+    }),
+
+
+    // Copies files from target to destination folder
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: paths.public,
+          to: 'assets',
+          globOptions: {
+            ignore: ['*.DS_Store'],
+          },
+          noErrorOnMissing: true,
+        },
+      ],
     }),
   ],
   optimization: {
