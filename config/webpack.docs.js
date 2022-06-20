@@ -9,13 +9,16 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const package_conf = require('../package.json')
 
+const p = `${paths.docs_in}/index`
+
 module.exports = merge(common, {
+  entry:p,
   mode: 'production',
   devtool: false,
   output: {
     path: paths.docs_out,
     publicPath: '/',
-    filename: 'js/[name].[contenthash].bundle.js',
+    filename: 'js/[name].js',
   },
   module: {
     rules: [
@@ -79,5 +82,13 @@ module.exports = merge(common, {
     hints: false,
     maxEntrypointSize: 512000,
     maxAssetSize: 512000,
+  },
+  resolve: {
+    modules: [paths.docs_in, 'node_modules'],
+    extensions: ['.js', '.jsx', '.json'],
+    alias: {
+      '+': paths.docs_in,
+      assets: paths.public,
+    },
   },
 })
