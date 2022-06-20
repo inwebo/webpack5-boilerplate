@@ -87,7 +87,7 @@ module.exports = merge(common, {
     modules: [paths.docs_in, 'node_modules'],
     extensions: ['.js', '.jsx', '.json'],
     alias: {
-      '+': paths.docs_in,
+      '@': paths.docs_in,
       assets: paths.public,
     },
   },

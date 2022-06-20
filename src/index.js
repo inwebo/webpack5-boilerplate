@@ -1,4 +1,1 @@
-import Foo from '@/Foo';
-
-console.log('src/index.js');
-
+import Foo from '@/Foo'
